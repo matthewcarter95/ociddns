@@ -5,7 +5,7 @@ Overview
 
 Oracle is retiring its Dynamic DNS (DDNS) capability.  This document describes how you can implement your own DDNS within Oracle Cloud Infrastructure (OCI).  The picture shows the high-level approach.  A zone can be configured to accept updates from clients that have determined that their IP has changed.   CheckIP service can be a dedicated CheckIP service in OCI or a 3rd party checkIP service.
 
-[[https://github.com/matthewcarter95/ociddns/blob/master/images/DDNS_on_OCI_Architecture.png|alt=arch]]
+[https://github.com/matthewcarter95/ociddns/blob/master/images/DDNS_on_OCI_Architecture.png|alt=arch]
 
 The DDNS tool kit has samples of how to connect to DNS service at OCI and patch the A record.  The toolkit also has a sample polling client that compares the result of the checkIP service with its current IPv4 address and updates when a change occurs.
 DDNS Client Requirements
@@ -25,4 +25,4 @@ Registering a Client
 
 Here is the sequence of activities in a typical toolkit implementation:
 
-[[https://github.com/matthewcarter95/ociddns/blob/master/images/DDNS_on_OCI_Sequence.png|alt=sequence]]
+[https://github.com/matthewcarter95/ociddns/blob/master/images/DDNS_on_OCI_Sequence.png|alt=sequence]
